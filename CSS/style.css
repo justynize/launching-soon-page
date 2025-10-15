@@ -7,7 +7,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-image: url(/Assets/black-color-background.jpg);
+    background-image: url(/Assets/background.png);
     background-position: center;
     background-size: cover;
     padding: 0 8%;
@@ -63,11 +63,21 @@
     font-size: 60px;
     margin-bottom: -14px;
 }
-
-.rocket i{
-    width: 200px;
+.rocket{
     position: absolute;
+    font-size: 100px;
+    color: white;
     right: 10%;
     bottom: 0;
-    color: white;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
 }
